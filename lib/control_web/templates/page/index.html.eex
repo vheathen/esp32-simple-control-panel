@@ -1,0 +1,11 @@
+<section class="phx-hero">
+  <h1><%= gettext "Welcome to %{name}!", name: "ESP32 MQTT Control Example" %></h1>
+  <p>Let's control esp32 microcontroller<br \>
+    via Elixir + Phoenix control panel with MQTT.</p>
+</section>
+
+<section class="row">
+  <article class="column">
+    <%= live_render(@conn, ControlWeb.Panel) %>
+  </article>
+</section>

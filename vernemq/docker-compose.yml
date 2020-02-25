@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  vernemq:
+    container_name: 'vernemq'
+    restart: unless-stopped
+    image: erlio/docker-vernemq:latest
+    ports:
+      - 1883:1883
+    environment:
+      DOCKER_VERNEMQ_ALLOW_ANONYMOUS: "on"
+      DOCKER_VERNEMQ_ACCEPT_EULA: "yes"
